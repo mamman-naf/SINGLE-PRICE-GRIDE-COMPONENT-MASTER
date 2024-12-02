@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --Cyan-why: hsl(179, 40%, 53%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Grayish-Blue);
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.container {
+  width: 90vw;
+}
+.head {
+  background-color: var(--Light-Gray);
+  padding: 1.5rem;
+}
+h1 {
+  color: var(--Cyan);
+  font-size: 1.5rem;
+}
+.guarantee {
+  color: var(--Bright-Yellow);
+  font-size: 1.1rem;
+}
+.gain {
+  color: var(--Grayish-Blue);
+}
+
+.subs {
+  background-color: var(--Cyan);
+  padding: 1.5rem;
+  color: var(--Light-Gray);
+}
+.price {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.per {
+  color: var(--Grayish-Blue);
+}
+.acces {
+  margin-top: 0;
+}
+.btn {
+  text-align: center;
+  display: block;
+  background-color: var(--Bright-Yellow);
+  color: var(--Light-Gray);
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-top: 2rem;
+}
+.why {
+  background-color: var(--Cyan-why);
+  padding: 1.5rem;
+  color: var(--Light-Gray);
+}
+
+li {
+  list-style-type: none;
+  padding: 0;
+  line-height: 1.5rem;
+}
+/* font sizes */
+.us, .monthly{
+  font-size: 1.1rem;
+}
+p{
+  font-size: 15px;
+}
+/* big screens */
+@media screen and (min-width: 450px) {
+  body{
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+  .container {
+    width: 45vw;
+  }
+  .wrapper {
+    display: flex;
+    width: 40rem;
+  }
+  .head {
+    width: 34.2rem;
+  }
+  .subs,
+  .why {
+    width: 17.1rem;
+  }
+}
